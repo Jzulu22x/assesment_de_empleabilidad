@@ -24,4 +24,12 @@ public class Patient
     [Column("email")]
     public required string Email { get; set; }
 
+    [Column("role_id")]
+    public int RoleId { get; set; }
+
+    [Column("user_name")]
+    public required string UserName { get; set; }
+
+    [ForeignKey("RoleId")]
+    public Role? Role { get; set; }
 }
