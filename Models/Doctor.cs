@@ -21,6 +21,9 @@ public class Doctor
     [Column("last_name")]
     public required string LastName { get; set; }
 
+    [Column("availability")]
+    public required bool Availability { get; set; }
+
     [Column("specialty_id")]
     public required string SpecialtyId { get; set; } 
 
