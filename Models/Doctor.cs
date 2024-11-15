@@ -25,7 +25,7 @@ public class Doctor
     public required bool Availability { get; set; }
 
     [Column("specialty_id")]
-    public required string SpecialtyId { get; set; } 
+    public required int SpecialtyId { get; set; } 
 
     [Column("role_id")]
     public int RoleId { get; set; }
