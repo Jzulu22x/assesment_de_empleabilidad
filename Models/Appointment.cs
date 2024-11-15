@@ -27,12 +27,6 @@ public class Appointment
     [MaxLength(100, ErrorMessage = "Reason should be less than 100 characters")]
     public required string Reason { get; set; }
 
-    [Column("created_at")]
-    public DateTime CreatedAt { get; set; } = DateTime.Now;
-
-    [Column("updated_at")]
-    public DateTime? UpdatedAt { get; set; }
-
     [Column("patient_id")]
     [Required(ErrorMessage = "Patient ID is required")]
     public int PatientId { get; set; }
@@ -40,6 +34,13 @@ public class Appointment
     [Column("doctor_id")]
     [Required(ErrorMessage = "Doctor ID is required")]
     public int DoctorId { get; set; }
+    
+    [Column("created_at")]
+    public DateTime CreatedAt { get; set; } = DateTime.Now;
+
+    [Column("updated_at")]
+    public DateTime? UpdatedAt { get; set; }
+
 
     [ForeignKey("patient_id")]
     public Patient? Patient { get; set; }
