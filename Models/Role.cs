@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace assessmente_de_empleabilidad.Models;
 [Table("roles")]
-public class Rol
+public class Role
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
