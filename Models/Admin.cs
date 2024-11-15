@@ -6,6 +6,8 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace assessmente_de_empleabilidad.Models;
+
+[Table("admins")]
 public class Admin
 {
     [Key]
