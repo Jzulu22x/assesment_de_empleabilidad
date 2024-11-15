@@ -13,7 +13,7 @@ public class Patient
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     [Column("id")]
-    public int PatientId { get; set; } 
+    public int Id { get; set; } 
 
     [Column("first_name")]
     public required string FirstName { get; set; }
